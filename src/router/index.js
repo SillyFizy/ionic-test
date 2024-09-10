@@ -12,7 +12,7 @@ const routes = [
     component: Tabs,
     children:[
       {
-        path: '',
+        path: 'tabs',
         redirect: '/tabs',
       },
       {

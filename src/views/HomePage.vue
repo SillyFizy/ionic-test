@@ -1,12 +1,30 @@
 <template>
-  <ion-page>
-    <ion-content class="ion-padding">
+  <ion-menu :type="'reveal'" content-id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          hello
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-menu-toggle>
+        <ion-button>
+          Hello
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+  <ion-page id="main-content">
+    <ion-content>
       <img class="hero-image" src="../../public/hero-image.jpg" alt="Hero image">
 
       <ion-header class="ion-no-border">
         <ion-toolbar>
-          <img width="40px" class="rounded-full" alt="Silhouette of a person's head"
-               src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+          <ion-menu-toggle>
+            <img width="40px" class="rounded-full cursor-pointer" alt="Silhouette of a person's head"
+                 src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+          </ion-menu-toggle>
           <ion-button shape="round" slot="end">
             <ion-icon slot="icon-only" :icon="settingsSharp"></ion-icon>
           </ion-button>
@@ -23,10 +41,14 @@ import {
   IonToolbar,
   IonContent,
   IonIcon,
+  IonTitle,
   IonButton,
-  IonFooter,
+  IonMenu,
+  IonMenuToggle,
 } from "@ionic/vue";
 import {settingsSharp} from "ionicons/icons"
+import {ref} from "vue";
+
 </script>
 
 <style scoped>
@@ -36,10 +58,12 @@ import {settingsSharp} from "ionicons/icons"
   --padding-end: 0;
   padding-bottom: 0;
 }
-.main{
+
+.main {
   --ion-background-color: rgb(42, 52, 60);
-  --background: linear-gradient(180deg, rgba(72,94,115,1) 0%, rgba(138,155,173,1) 65%, rgba(203,206,213,1) 100%);
+  --background: linear-gradient(180deg, rgba(72, 94, 115, 1) 0%, rgba(138, 155, 173, 1) 65%, rgba(203, 206, 213, 1) 100%);
 }
+
 ion-header {
   position: absolute;
   top: 0;
@@ -63,5 +87,8 @@ ion-toolbar {
 ion-button {
   --background: transparent;
   --box-shadow: none;
+}
+ion-menu-toggle ion-button{
+  background: #006280;
 }
 </style>
