@@ -31,7 +31,7 @@ import {
   IonTabButton,
   IonIcon,
 } from '@ionic/vue'
-import { home, moon, flower, musicalNote } from 'ionicons/icons';
+import {home, moon, flower, musicalNote} from 'ionicons/icons';
 </script>
 
 <style scoped>
@@ -44,7 +44,7 @@ import { home, moon, flower, musicalNote } from 'ionicons/icons';
   justify-content: center;
   padding-bottom: env(safe-area-inset-bottom);
   z-index: 1000;
-  --ion-background-color:  rgba(0, 0, 0, 0);
+  --ion-background-color: rgba(0, 0, 0, 0);
 }
 
 ion-tab-bar {
@@ -54,7 +54,6 @@ ion-tab-bar {
   border-radius: 40px;
 }
 
-/* Optional: Add some margin to the bottom for better appearance */
 ion-tabs {
   margin-bottom: 10px;
 }
