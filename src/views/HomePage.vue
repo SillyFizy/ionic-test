@@ -1,36 +1,38 @@
 <template>
-  <ion-menu :type="'reveal'" content-id="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>
-          hello
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-menu-toggle>
-        <ion-button>
-          Hello
-        </ion-button>
-      </ion-menu-toggle>
-    </ion-content>
-  </ion-menu>
-  <ion-page id="main-content">
-    <img class="hero-image" src="../../public/hero-image.jpg" alt="Hero image">
-
-    <ion-header class="ion-no-border">
-      <ion-toolbar>
+  <ion-page>
+    <ion-menu :type="'reveal'" content-id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>
+            hello
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
         <ion-menu-toggle>
-          <img width="40px" class="rounded-full cursor-pointer" alt="Silhouette of a person's head"
-            src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          <ion-button>
+            Hello
+          </ion-button>
         </ion-menu-toggle>
-        <ion-button shape="round" slot="end">
-          <ion-icon slot="icon-only" :icon="settingsSharp"></ion-icon>
-        </ion-button>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
-    </ion-content>
+      </ion-content>
+    </ion-menu>
+    <ion-page id="main-content">
+      <img class="hero-image" src="../../public/hero-image.jpg" alt="Hero image">
+
+      <ion-header class="ion-no-border">
+        <ion-toolbar>
+          <ion-menu-toggle>
+            <img width="40px" class="rounded-full cursor-pointer" alt="Silhouette of a person's head"
+                 src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+          </ion-menu-toggle>
+          <ion-button shape="round" slot="end">
+            <ion-icon slot="icon-only" :icon="settingsSharp"></ion-icon>
+          </ion-button>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+      </ion-content>
+    </ion-page>
   </ion-page>
 </template>
 
@@ -46,8 +48,8 @@ import {
   IonMenu,
   IonMenuToggle,
 } from "@ionic/vue";
-import { settingsSharp } from "ionicons/icons"
-import { ref } from "vue";
+import {settingsSharp} from "ionicons/icons"
+import {ref} from "vue";
 
 </script>
 

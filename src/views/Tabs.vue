@@ -2,22 +2,20 @@
   <ion-page>
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
-      <div class="tab-bar-container">
-        <ion-tab-bar>
-          <ion-tab-button tab="home" href="/home">
-            <ion-icon :icon="home"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button tab="night" href="/night">
-            <ion-icon :icon="moon"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button tab="lotus" href="/lotus">
-            <ion-icon :icon="flower"></ion-icon>
-          </ion-tab-button>
-          <ion-tab-button tab="music" href="/music">
-            <ion-icon :icon="musicalNote"></ion-icon>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </div>
+      <ion-tab-bar class="tab-bar-container">
+        <ion-tab-button tab="home" href="/tabs/home">
+          <ion-icon :icon="home"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="night" href="/tabs/night">
+          <ion-icon :icon="moon"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="lotus" href="/tabs/lotus">
+          <ion-icon :icon="flower"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="music" href="/music">
+          <ion-icon :icon="musicalNote"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
     </ion-tabs>
   </ion-page>
 </template>
