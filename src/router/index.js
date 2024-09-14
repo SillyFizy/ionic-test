@@ -7,7 +7,6 @@ const routes = [
     redirect: '/home'
   },
   {
-    path: '/',
     name: 'Tabs',
     component: Tabs,
     children:[
