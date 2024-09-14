@@ -16,20 +16,20 @@
     </ion-content>
   </ion-menu>
   <ion-page id="main-content">
-    <ion-content>
-      <img class="hero-image" src="../../public/hero-image.jpg" alt="Hero image">
+    <img class="hero-image" src="../../public/hero-image.jpg" alt="Hero image">
 
-      <ion-header class="ion-no-border">
-        <ion-toolbar>
-          <ion-menu-toggle>
-            <img width="40px" class="rounded-full cursor-pointer" alt="Silhouette of a person's head"
-                 src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
-          </ion-menu-toggle>
-          <ion-button shape="round" slot="end">
-            <ion-icon slot="icon-only" :icon="settingsSharp"></ion-icon>
-          </ion-button>
-        </ion-toolbar>
-      </ion-header>
+    <ion-header class="ion-no-border">
+      <ion-toolbar>
+        <ion-menu-toggle>
+          <img width="40px" class="rounded-full cursor-pointer" alt="Silhouette of a person's head"
+            src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-menu-toggle>
+        <ion-button shape="round" slot="end">
+          <ion-icon slot="icon-only" :icon="settingsSharp"></ion-icon>
+        </ion-button>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
     </ion-content>
   </ion-page>
 </template>
@@ -46,8 +46,8 @@ import {
   IonMenu,
   IonMenuToggle,
 } from "@ionic/vue";
-import {settingsSharp} from "ionicons/icons"
-import {ref} from "vue";
+import { settingsSharp } from "ionicons/icons"
+import { ref } from "vue";
 
 </script>
 
@@ -64,13 +64,13 @@ import {ref} from "vue";
   --background: linear-gradient(180deg, rgba(72, 94, 115, 1) 0%, rgba(138, 155, 173, 1) 65%, rgba(203, 206, 213, 1) 100%);
 }
 
-ion-header {
+/* ion-header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
-}
+} */
 
 ion-toolbar {
   --background: rgba(0, 0, 0, 0);
@@ -88,7 +88,8 @@ ion-button {
   --background: transparent;
   --box-shadow: none;
 }
-ion-menu-toggle ion-button{
+
+ion-menu-toggle ion-button {
   background: #006280;
 }
 </style>
